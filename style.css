@@ -4,10 +4,131 @@ a{
     text-decoration: none;
     color: inherit;
 }
-* {
-    transition: transform 0.3s ease-in-out;
+.body1 {
+    background-image: url('https://wallpaperaccess.com/full/54150.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.body2 {
+    background-image: url('https://cdn.britannica.com/92/147892-050-84829087/Bruno-Mars.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1, h2, h4, h5, h6, .opa-bg{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+table{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+nav{
+    background-color: #FFD700;
+}
+footer{
+    background-color: #000000;
 }
 
-*:hover {
-    transform: scale(1.0005);
+.floating-images {
+    position: relative;
+}
+
+
+.kep-bal {
+    position: absolute;
+    left: 5%;
+    bottom: 200%;
+    width: 400px;
+    height: auto;
+    
+}
+
+.kep-jobb {
+    position: absolute;
+    right: 5%;
+    bottom: 100%;
+    width: 400px;
+    height: auto;
+
+}
+.kep-jobb2 {
+    position: absolute;
+    right: 5%;
+    bottom: 100%;
+    width: 400px;
+    height: auto;
+    margin-bottom: 800px ;
+
+}
+@media (max-width: 768px) {
+    .floating-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: static;
+    }
+
+    .kep-bal, .kep-jobb, .kep-jobb2 {
+        position: static;
+        width: 100%;
+        max-width: 300px; 
+        margin-top: 10px; 
+    }
+    .kep-jobb2{
+        margin-bottom: auto;
+    }
+}
+#bodyaward{
+    background-image: url(https://i8.amplience.net/i/naras/gettyimages-911568542.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@media (max-width: 768px) {
+    #card1, #card2{
+        height: 80%;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+}
+.bg-pinkd, .sotet{
+    background-color: rgba(177, 29, 93, 0.7);
+    color: white;
+    display: inline-block;
+    
+}
+.bg-pinkl, .vilagos{
+    background-color: rgba(244, 167, 193, 0.7);
+    display: inline-block;
+    
+    
+}
+.list-group-item, .list-group{
+    border: black solid 0.1px !important;
+}
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers images */
+    align-items: center; /* Ensures equal height alignment */
+}
+.text-purple{
+    color: #5D0042;
+}
+
+#body3 {
+    background-image: url('https://m.media-amazon.com/images/I/71RuUQVcgUL._AC_UF894,1000_QL80_.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}
+.btn-brown{
+    background-color: #C68E58 ;
+}
+.btn-pink{
+  background-color: #F8D7DA ;  
 }

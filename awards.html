@@ -5,24 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iskolai Rendezvények</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<style>
+
+.card {
+    opacity: 0.95;
+    width: 80%;
+}
+
+img{
+    max-width: 25% !important;
+    margin: auto;
+
+    max-height: 400px !important;
+}
+
+</style>
+<body id="bodyaward">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Bruno Mars Fanpage</a>
+            <a class="navbar-brand">Bruno Mars Fanpage</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                    
                     <li class="nav-item">
-                        <a class="nav-link" href="main.html">Kezdőlap</a>
+                        <a class="nav-link" href="Biography.html">Életrajza</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Események</a>
+                        <a class="nav-link" href="index.html">Kezdőlap</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Kapcsolat</a>
+                        <a class="nav-link" href="Songs.html">Zenéi</a>
                     </li>
                 </ul>
             </div>
@@ -30,52 +47,66 @@
     </nav>
 
     
-    <div class="container mt-4">
+<div class="container mt-4">
         
         <header class="mb-5">
-            <h5 class="h5 m-auto">Bruno Mars pályafutása során számos rangos díjat nyert el, és 2025-ben is több jelentős jelölést kapott. </h5>
+            <h5 class="text-center m-auto lead">Bruno Mars pályafutása során számos rangos díjat nyert el, és 2025-ben is több jelentős jelölést kapott. </h5>
         </header>
-        <section class="row">
-        <h1 class="text-center text-black">Bruno Mars eddigi díjai</h1>
-        <ul class="list-group">
-            <li class="list-group-item">Grammy-díjak: 16 győzelem, 33 jelölés            </li>
-            <li class="list-group-item">MTV Video Music Awards: 5 győzelem, 25 jelölés</li>
-            <li class="list-group-item">iHeartRadio Music Awards: 10 győzelem, 25 jelölés</li>
-            
-            
-        </ul>
-        <ul class="list-group">
-            <li class="list-group-item">MTV Europe Music Awards: 3 győzelem, 16 jelölés</li>
-            <li class="list-group-item">NAACP Image Awards: 7 győzelem, 26 jelölés</li>
-            <li class="list-group-item">Japan Gold Disc Awards: 2 győzelem</li>
-        </ul>
-        <ul class="list-group">
-            <li class="list-group-item">MelOn Music Awards: 2 győzelem</li>
-            <li class="list-group-item">Radio Disney Music Awards: 1 győzelem</li>
-            <li class="list-group-item">People's Choice Awards: 1 győzelem</li>
-        </ul>
+    <section class="row">
+        
+        <div class="col-sm-12 col-md-6 align-items-stretch d-flex" id="card1">
+            <div class="card shadow">
+                <div class="card-header  text-dark bg-pinkd">
+                    <h3 class="card-titl text-center">Bruno Mars eddigi díjai</h3>
+                </div>
+                <div class="card-body bg-pinkl">
+                    <ul class="list-group">
+                        <li class="list-group-item vilagos">Grammy-díjak: 16 győzelem, 33 jelölés</li>
+                        <li class="list-group-item sotet">MTV Video Music Awards: 5 győzelem, 25 jelölés</li>
+                        <li class="list-group-item vilagos">iHeartRadio Music Awards: 10 győzelem, 25 jelölés</li>
+                        <li class="list-group-item sotet">MTV Europe Music Awards: 3 győzelem, 16 jelölés</li>
+                        <li class="list-group-item vilagos">NAACP Image Awards: 7 győzelem, 26 jelölés</li>
+                        <li class="list-group-item sotet">Japan Gold Disc Awards: 2 győzelem</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-sm-12 col-md-6 align-items-stretch d-flex" id="card2">
+            <div class="card shadow h-100">
+                <div class="card-header text-dark bg-pinkd">
+                    <h3 class="card-title text-center ">2025-ös díjak és jelölések</h3>
+                </div>
+                <div class="card-body bg-pinkl">
+                    <ul class="list-group ">
+                        <li class="list-group-item list-group-item-secondary text-center lead sotet">Grammy-díjak:</li>
+                        <li class="list-group-item bg-pinkl">Győzelem: Legjobb popduó/csoport előadás | „Die With a Smile”</li>
+                        <li class="list-group-item bg-pinkl">Jelölés: Az év dala | „Die With a Smile”</li>
+                        <li class="list-group-item list-group-item-secondary text-center lead sotet">American Music Awards</li>
+                        <li class="list-group-item bg-pinkl">Jelölés: Az év együttműködése | „Apt.” (Roséval közösen)</li>
+                        <li class="list-group-item list-group-item-secondary text-center lead sotet">Music Awards Japan</li>
+                        <li class="list-group-item lead vilagos text-center">Jelölések:</li>
+                        <li class="list-group-item bg-pinkl">Az év nemzetközi popdala | „Apt.”</li>
+                        <li class="list-group-item bg-pinkl">Közönségkedvenc nemzetközi dal | „Apt.”</li>
+                        <li class="list-group-item bg-pinkl">Az év dala | „Apt.”</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-        <h1 class="text-center text-black">2025-ös díjak és jelölések</h1>
-        <ul class="list-group">
-            
-            <li class="list-group-item list-group-item-secondary">Grammy-díjak:           </li>
-            <li class="list-group-item">Győzelem: Legjobb popduó/csoport előadás | „Die With a Smile” (Lady Gagával közösen)</li>
-            <li class="list-group-item">Jelölés: Az év dala | „Die With a Smile”</li>
-            <li class="list-group-item list-group-item-secondary">American Music Awards</li>
-            <li class="list-group-item">Jelölés: Az év együttműködése | „Apt.” (Roséval közösen)</li>
-            <li class="list-group-item list-group-item-secondary">Music Awards Japan</li>
-            <li class="list-group-item"><small>Jelölések:</small></li>
-            <li class="list-group-item">Az év nemzetközi popdala | „Apt.”</li>
-            <li class="list-group-item">Közönségkedvenc nemzetközi dal | „Apt.”</li>
-            <li class="list-group-item">Az év dala | „Apt.”</li>
-        </ul>
-    </section>
+</div>
+<div class="container-fluid mt-5">
+    <div class="row image-container">
+        <img class="img-fluid" src="https://www.pluggedin.com/wp-content/uploads/2025/01/rose-apt-1024x587.jpg">
+        <img class="img-fluid" src="https://www.usatoday.com/gcdn/authoring/authoring-images/2025/02/03/USAT/78170152007-2197327564.jpg?crop=2988,2240,x336,y0">
+        <img class="img-fluid" src="https://m.media-amazon.com/images/I/81WKNDlCFaL._AC_UF894,1000_QL80_.jpg">
+        <img class="img-fluid" src="https://www.pluggedin.com/wp-content/uploads/2025/01/rose-apt-1024x587.jpg">
     </div>
+</div>
 
-    <footer class="bg-light py-3 mt-5">
+    <footer class="sticky-bottom text-light py-3 mt-5">
         <div class="container">
-            <p class="text-center mb-0">© 2025 Jedlik. Minden jog fenntartva.</p>
+            <p class="text-center text-light mb-0"><a href="rickroll.html">©</a> 2025 Jedlik. Minden jog fenntartva.</p>
         </div>
     </footer>
 
